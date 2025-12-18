@@ -146,7 +146,11 @@ body {
 }
 
 
-
+/* TESTIMONIALS */
+.testimonials {
+  padding: 80px 20px;
+  text-align: center;
+}
 
 .link{
     text-align: center;
@@ -171,4 +175,5 @@ footer {
   text-align: center;
   padding: 30px 20px;
 }
+
 
