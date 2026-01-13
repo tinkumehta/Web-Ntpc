@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatar</title>
+</head>
+<body>
+    <div class="header" style="width: 100%; height: 500px; border: 5px solid black;">
+        <h2 style="display:  flex; justify-content: center; font-size: 30px;">Calculatar</h2>
+        <input type="number" id="a" step="any">
+        <select name="" id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">X</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="number" id="b" step="any">
+        <button id="btn" onclick="cal()">Calculted</button>
+        <h2 id="sum"></h2>
+    </div>
+    <script>
+
+        function cal() {
+            const op1 = document.getElementById('a').value;
+            const op2 = document.getElementById('b').value;
+            const op3 = document.getElementById('operation').value;
+            let result =0;
+            if (op3 === '+') {
+                result = parseInt(op1) + parseInt(op2) ;
+            } else if(op3 === '-'){
+                 result = parseInt(op1) - parseInt(op2) ;
+            } else if (op3 === '/'){
+                 result = parseInt(op1) / parseInt(op2) ;
+            } else if (op3 === '*'){
+                 result = parseInt(op1) * parseInt(op2) ;
+            } else if (op3 === '%'){
+                 result = parseInt(op1) % parseInt(op2) ;
+            }
+            document.getElementById('sum').innerHTML = result;
+        }
+        // var i=10;
+        // do{
+        //     //console.log(i + "Hello");
+        //     document.write(`<h1>${i} Hello</h1>`);
+        //     i--;
+        // } 
+        // while(i >=5);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="a">Hello</h3>
+    <div id="inp">
+        <input type="text" id="input">
+        <button onclick="cal()"> Click</button>
+    </div>
+    <div id="out"></div>
+    <script>
+         let input ;
+        function cal() {
+           input = document.getElementById('input').value;
+            document.getElementById('out').innerHTML = `<h1>${input} </h1>`;
+        }
+    </script>
+</body>
+</html>
