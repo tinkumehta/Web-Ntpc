@@ -6,6 +6,9 @@
     <title>ILEX Public School - CBSE Affiliated</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
@@ -13,22 +16,32 @@
         <div class="header-top">
             <div class="container">
                 <div class="affiliation-info">
-                    <div>CBSE Affiliation No: 3430388</div>
-                    <div>School Code: 66592</div>
+                    <div><i class="fas fa-award"></i> CBSE Affiliation No: 3430388</div>
+                    <div><i class="fas fa-graduation-cap"></i> School Code: 66592</div>
                 </div>
                 <div class="contact-top">
-                    <i class="fas fa-phone"></i> +91 1234 567890
+                    <i class="fas fa-phone"></i> +91 98765 43210
+                    <i class="fas fa-envelope"></i> info@ilexschool.edu.in
                 </div>
             </div>
         </div>
         
         <div class="container">
             <div class="logo-section">
-                <img src="https://cdn.pixabay.com/photo/2017/09/16/19/21/school-2756903_1280.png" alt="ILEX Public School Logo" class="logo">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="ILEX Public School Logo" class="logo">
+                    <div class="logo-badge">CBSE</div>
+                </div>
                 <div class="school-info">
                     <h1>ILEX PUBLIC SCHOOL</h1>
                     <h2>Affiliated to CBSE New Delhi upto 10+2 level</h2>
-                    <div class="branches">Branches: Panchmadhav, Kariyatpur, Barkagaon, Gauriyakarma, Gadikala, Barkatha, Ichak, Hazaribagh, Pandebara, Mayurhand</div>
+                    <div class="branches">
+                        <div class="marquee-container">
+                            <div class="marquee-content">
+                                <span>Branches:</span> Panchmadhav • Kariyatpur • Barkagaon • Gauriyakarma • Gadikala • Barkatha • Ichak • Hazaribagh • Pandebara • Mayurhand
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -36,13 +49,14 @@
         <nav>
             <div class="container nav-container">
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About School</a></li>
-                    <li><a href="#leadership">Leadership</a></li>
-                    <li><a href="#branches">Our Branches</a></li>
-                    <li><a href="#admissions">Admissions</a></li>
-                    <li><a href="#news">News & Updates</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-school"></i> About School</a></li>
+                    <li><a href="#leadership"><i class="fas fa-users"></i> Leadership</a></li>
+                    <li><a href="#branches"><i class="fas fa-code-branch"></i> Our Branches</a></li>
+                    <li><a href="#admissions"><i class="fas fa-file-signature"></i> Admissions</a></li>
+                    <li><a href="#news"><i class="fas fa-newspaper"></i> News & Updates</a></li>
+                    <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="#contact"><i class="fas fa-address-book"></i> Contact</a></li>
                 </ul>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
@@ -53,242 +67,842 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="container">
-            <h1>Welcome to ILEX Public School</h1>
-            <p>Providing quality education and holistic development for students from primary to senior secondary level. Our mission is to nurture young minds and prepare them for a successful future.</p>
-            <a href="#admissions" class="cta-button">Admissions Open 2024-25</a>
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Excellence in Education Since 2005</h1>
+                    <p>Nurturing young minds with academic excellence and holistic development</p>
+                    <a href="#admissions" class="cta-button">Admissions Open 2026-27 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>CBSE Affiliated Education</h1>
+                    <p>Quality education from primary to senior secondary level</p>
+                    <a href="#about" class="cta-button">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>10 Branches Across Jharkhand</h1>
+                    <p>Providing accessible quality education to rural and urban communities</p>
+                    <a href="#branches" class="cta-button">Our Locations <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
 
     <!-- Main Content -->
     <main class="container">
         <!-- About School Section -->
-        <section id="about">
+        <section id="about" class="section-padding">
             <h2 class="section-title">About Our School</h2>
+            <p class="section-subtitle">Providing Quality Education Since 2005</p>
+            
             <div class="about-school">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="ILEX Public School Campus" class="school-image">
+                <div class="about-image">
+                    <img src="img/school.jpeg" alt="ILEX Public School Campus" class="school-image">
+                    <div class="image-overlay">
+                        <h3>25+ Years of Excellence</h3>
+                        <p>In Education Service</p>
+                    </div>
                 </div>
-                <div>
-                    <p>ILEX Public School is a premier educational institution affiliated with CBSE New Delhi, offering education from primary to senior secondary level (10+2). With multiple branches across the region, we are committed to providing quality education that fosters intellectual, social, and emotional growth.</p>
-                    <br>
-                    <p>Our school is equipped with modern facilities, experienced faculty, and a curriculum that balances academic excellence with co-curricular activities. We believe in creating a nurturing environment where every student can discover and develop their unique talents.</p>
-                    <br>
-                    <p>At ILEX Public School, we strive to develop responsible citizens who are prepared to face the challenges of the 21st century with confidence and competence.</p>
+                <div class="about-content">
+                    <p class="highlight-text">ILEX Public School is a premier educational institution affiliated with CBSE New Delhi, offering education from primary to senior secondary level (10+2).</p>
+                    <p>With multiple branches across the region, we are committed to providing quality education that fosters intellectual, social, and emotional growth. Our school is equipped with modern facilities, experienced faculty, and a curriculum that balances academic excellence with co-curricular activities.</p>
+                    
+                    <div class="achievement-stats">
+                        <div class="stat">
+                            <h3>2000+</h3>
+                            <p>Students Enrolled</p>
+                        </div>
+                        <div class="stat">
+                            <h3>150+</h3>
+                            <p>Qualified Staff</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10</h3>
+                            <p>Branches</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>CBSE Pass Rate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-laptop"></i>
+                            <h4>Digital Classrooms</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-flask"></i>
+                            <h4>Science Labs</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-book"></i>
+                            <h4>Library</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-futbol"></i>
+                            <h4>Sports Facilities</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Leadership Section -->
-        <section id="leadership">
+        <section id="leadership" class="section-padding">
             <h2 class="section-title">School Leadership</h2>
-            <div class="leadership">
-                <div class="leader-card">
-                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Director Dr. Shailesh Kr" class="leader-img">
-                    <div class="leader-info">
+            <p class="section-subtitle">Meet Our Visionary Leaders</p>
+            
+            <!-- Director Section -->
+            <div class="director-section">
+                <div class="director-card">
+                    <div class="director-image">
+                        <img src="img/dirA.jpeg" alt="Director Dr. Shailesh Kr">
+                        <div class="director-badge">Director</div>
+                    </div>
+                    <div class="director-info">
                         <h3>Dr. Shailesh Kr</h3>
-                        <div class="leader-role">Director</div>
-                        <div class="leader-qualification">M.Sc, PhD, MBA, B.Ed</div>
-                        <p>With over 20 years of experience in education, Dr. Shailesh leads our institution with a vision to create an environment where learning is engaging, meaningful, and transformative.</p>
+                        <div class="leader-qualification"><i class="fas fa-graduation-cap"></i> M.Sc, PhD, MBA, B.Ed</div>
+                        <p>With over 10 years of experience in education, Dr. Shailesh leads our institution with a vision to create an environment where learning is engaging, meaningful, and transformative. His leadership focuses on innovation in teaching methodologies and holistic student development.</p>
+                        <div class="leader-contact">
+                            <p><i class="fas fa-quote-left"></i> "Education is not just about academic excellence but about building character and creating responsible citizens."</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="leader-card">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80" alt="Principal Deepak Paswan" class="leader-img">
-                    <div class="leader-info">
-                        <h3>Deepak Paswan</h3>
-                        <div class="leader-role">Principal</div>
-                        <div class="leader-qualification">M.A., M.Ed., Ph.D. (Education)</div>
-                        <p>Mr. Paswan brings extensive administrative experience and a student-centric approach to ensure the holistic development of every child in our school community.</p>
+            </div>
+            
+            <!-- Barkagaon Branch Leadership -->
+            <div class="branch-leadership">
+                <h3 class="branch-title"><i class="fas fa-map-marker-alt"></i> Barkagaon Branch Leadership</h3>
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/pricele.jpeg" alt="Principal Deepak Paswan">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mr. Deepak Paswan</h3>
+                            <div class="leader-role">Principal</div>
+                            <div class="leader-qualification">M.A., M.Ed., Ph.D. (Education)</div>
+                            <p>Mr. Paswan brings extensive administrative experience and a student-centric approach to ensure the holistic development of every child in our school community.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 12+ Years Experience</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="leader-card">
-                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1361&q=80" alt="Vice Principal Rinku Lala" class="leader-img">
-                    <div class="leader-info">
-                        <h3>Rinku Lala</h3>
-                        <div class="leader-role">Vice Principal</div>
-                        <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
-                        <p>Ms. Lala focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                    
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/vic prin.jpeg" alt="Vice Principal Rinku Lala">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mr. Rinku Lala</h3>
+                            <div class="leader-role">Vice Principal</div>
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>Ms. Lala focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 8+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/sh.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mr. SH kahan</h3>
+                            
+                            <div class="leader-qualification">M.Sc , B.Ed. CTET, STET</div>
+                            <p>focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 7+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Swati.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Swati Tiwari</h3>
+                            
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 4+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Abk.jpeg" alt="Vice Principal Rinku Lala">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mr.Abhishek Kumar</h3>
+                            
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 5+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Sanjay.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mr. Sanjay Sinha</h3>
+                          
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p> focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 10+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Suraj Kumar.jpeg" alt="Vice Principal Rinku Lala">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Surja Kumar</h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 3+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/danche teacher.jpeg" alt="Vice Principal Rinku Lala">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mr. Suraj Kumar</h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>Ms.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 5+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Saniya.jpeg" alt="Vice Principal Rinku Lala">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Saniya Kumari</h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 1+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Ashish Kumar.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Ashish Kumar</h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 3+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/MD Azharuddin.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>MD Azharuddin </h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 2.5+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Pummy.jpeg" alt="Vice Principal Rinku Lala">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Pummy Kumari</h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>Msr.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 1+ Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Joyti.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Joyti Kumari</h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 1.5+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Nimmi.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Nimmi Kumari</h3>
+                           
+                            <div class="leader-qualification"> B.Ed., M.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 1+ Years Experience</span>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Shilpi.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Shilpi Kumari</h3>
+                           
+                            <div class="leader-qualification"> B.Ed., M.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 2+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Shagufta.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Shagufta Parveen</h3>
+                           
+                            <div class="leader-qualification"> B.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 1+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Riya.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Riya Kumari</h3>
+                           
+                            <div class="leader-qualification"> B.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 1.5+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Sana.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Sana</h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 1.5+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Nazz.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Nazz</h3>
+                           
+                            <div class="leader-qualification"> B.Ed</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 1.5+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Manisha.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Manisha Verma</h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 4+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/Shifa.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Shifa Nezam</h3>
+                           
+                            <div class="leader-qualification">M.Sc., B.Ed., M.Ed.</div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 2+ Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/staf3.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mr. Aman Gupta</h3>
+                           
+                            <div class="leader-qualification"> B.Ed.</div>
+                            <p>Mr.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 3  + Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="img/staf2.jpeg" alt="">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="leader-details">
+                            <h3>Mrs. Umesh Kumar</h3>
+                           
+                            <div class="leader-qualification"> B.Ed. </div>
+                            <p>Mrs.  focuses on academic excellence and discipline, ensuring that our curriculum implementation meets the highest standards of CBSE education.</p>
+                            <div class="leader-experience">
+                                <span><i class="fas fa-briefcase"></i> 3  + Years Experience</span>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Branches Section -->
-        <section id="branches" class="branches-section">
+        <section id="branches" class="section-padding">
             <h2 class="section-title">Our Branches</h2>
-            <div class="branches-grid">
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Panchmadhav</h3>
-                    <p>Main branch with full facilities</p>
+            <p class="section-subtitle">10 Locations Across Jharkhand</p>
+            
+            <div class="branches-container">
+                <div class="branches-grid">
+                    <div class="branch-card">
+                        <div class="branch-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Panchmadhav</h3>
+                        <p>Main branch with full facilities including Science, Computer, and Language labs</p>
+                        <div class="branch-features">
+                            <span>Classes: Nursery to 12</span>
+                            <span>Est: 2005</span>
+                        </div>
+                    </div>
+                    
+                    <div class="branch-card highlight">
+                        <div class="branch-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Barkagaon</h3>
+                        <p>Primary to Senior Secondary with Science and Commerce streams</p>
+                        <div class="branch-features">
+                            <span>Classes: 1 to 12</span>
+                            <span>Est: 2010</span>
+                        </div>
+                    </div>
+                    
+                    <div class="branch-card">
+                        <div class="branch-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Gauriyakarma</h3>
+                        <p>Science stream available with fully equipped laboratories</p>
+                        <div class="branch-features">
+                            <span>Classes: 6 to 12</span>
+                            <span>Est: 2012</span>
+                        </div>
+                    </div>
+                    
+                    <div class="branch-card">
+                        <div class="branch-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Barkatha</h3>
+                        <p>Fully digital classrooms with smart board technology</p>
+                        <div class="branch-features">
+                            <span>Classes: Nursery to 10</span>
+                            <span>Est: 2015</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Kariyatpur</h3>
-                    <p>Established in 2010</p>
-                </div>
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Barkagaon</h3>
-                    <p>Primary to Middle School</p>
-                </div>
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Gauriyakarma</h3>
-                    <p>Science stream available</p>
-                </div>
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Gadikala</h3>
-                    <p>Newest branch</p>
-                </div>
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Barkatha</h3>
-                    <p>Fully digital classrooms</p>
-                </div>
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Ichak</h3>
-                    <p>Sports excellence center</p>
-                </div>
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Hazaribagh</h3>
-                    <p>Senior secondary with all streams</p>
-                </div>
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Pandebara</h3>
-                    <p>Focus on holistic education</p>
-                </div>
-                <div class="branch-item">
-                    <i class="fas fa-school"></i>
-                    <h3>Mayurhand</h3>
-                    <p>Primary education center</p>
+                
+                <div class="all-branches">
+                    <h4><i class="fas fa-list"></i> All Our Branches</h4>
+                    <div class="branch-list">
+                        <div class="branch-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Kariyatpur (Est. 2008)</span>
+                        </div>
+                        <div class="branch-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Gadikala (Newest Branch)</span>
+                        </div>
+                        <div class="branch-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ichak (Sports Excellence Center)</span>
+                        </div>
+                        <div class="branch-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hazaribagh (All Streams)</span>
+                        </div>
+                        <div class="branch-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pandebara (Holistic Education)</span>
+                        </div>
+                        <div class="branch-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mayurhand (Primary Center)</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Admissions Section -->
-        <section id="admissions">
-            <h2 class="section-title">Admissions 2024-25</h2>
-            <div class="admissions-section">
-                <p style="margin-bottom: 30px;">We are now accepting applications for the academic year 2024-25. Please fill out the form below and our admissions team will contact you shortly.</p>
+        <section id="admissions" class="section-padding">
+            <h2 class="section-title">Admissions 2026-27</h2>
+            <p class="section-subtitle">Secure Your Child's Future Today</p>
+            
+            <div class="admissions-container">
+                <div class="admission-info">
+                    <h3><i class="fas fa-info-circle"></i> Admission Process</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4>Inquiry Form</h4>
+                            <p>Fill the online admission inquiry form</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4>Document Submission</h4>
+                            <p>Submit required documents for verification</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4>Interaction Session</h4>
+                            <p>Student & parent interaction with faculty</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h4>Admission Confirmation</h4>
+                            <p>Fee payment and admission confirmation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="admission-details">
+                        <h4><i class="fas fa-clipboard-list"></i> Required Documents</h4>
+                        <ul>
+                            <li>Birth Certificate</li>
+                            <li>Aadhar Card of Student & Parents</li>
+                            <li>Previous School Report Card</li>
+                            <li>Transfer Certificate (if applicable)</li>
+                            <li>Passport Size Photographs (4)</li>
+                        </ul>
+                    </div>
+                </div>
                 
-                <form id="admissionForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="studentName">Student's Full Name *</label>
-                            <input type="text" id="studentName" name="studentName" required>
+                <div class="admission-form">
+                    <h3><i class="fas fa-file-signature"></i> Admission Inquiry Form</h3>
+                    <form id="admissionForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentName"><i class="fas fa-user-graduate"></i> Student's Full Name *</label>
+                                <input type="text" id="studentName" name="studentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob"><i class="fas fa-calendar-alt"></i> Date of Birth *</label>
+                                <input type="date" id="dob" name="dob" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="dob">Date of Birth *</label>
-                            <input type="date" id="dob" name="dob" required>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="grade"><i class="fas fa-graduation-cap"></i> Grade Applying For *</label>
+                                <select id="grade" name="grade" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="nursery">Nursery</option>
+                                    <option value="kg">KG</option>
+                                    <option value="1">Grade 1</option>
+                                    <option value="2">Grade 2</option>
+                                    <option value="3">Grade 3</option>
+                                    <option value="4">Grade 4</option>
+                                    <option value="5">Grade 5</option>
+                                    <option value="6">Grade 6</option>
+                                    <option value="7">Grade 7</option>
+                                    <option value="8">Grade 8</option>
+                                    <option value="9">Grade 9</option>
+                                    <option value="10">Grade 10</option>
+                                    <option value="11">Grade 11 (Science/Commerce)</option>
+                                    <option value="12">Grade 12 (Science/Commerce)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="branch"><i class="fas fa-map-marker-alt"></i> Preferred Branch *</label>
+                                <select id="branch" name="branch" required>
+                                    <option value="">Select Branch</option>
+                                    <option value="panchmadhav">Panchmadhav</option>
+                                    <option value="kariyatpur">Kariyatpur</option>
+                                    <option value="barkagaon">Barkagaon</option>
+                                    <option value="gauriyakarma">Gauriyakarma</option>
+                                    <option value="gadikala">Gadikala</option>
+                                    <option value="barkatha">Barkatha</option>
+                                    <option value="ichak">Ichak</option>
+                                    <option value="hazaribagh">Hazaribagh</option>
+                                    <option value="pandebara">Pandebara</option>
+                                    <option value="mayurhand">Mayurhand</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="grade">Grade Applying For *</label>
-                            <select id="grade" name="grade" required>
-                                <option value="">Select Grade</option>
-                                <option value="nursery">Nursery</option>
-                                <option value="kg">KG</option>
-                                <option value="1">Grade 1</option>
-                                <option value="2">Grade 2</option>
-                                <option value="3">Grade 3</option>
-                                <option value="4">Grade 4</option>
-                                <option value="5">Grade 5</option>
-                                <option value="6">Grade 6</option>
-                                <option value="7">Grade 7</option>
-                                <option value="8">Grade 8</option>
-                                <option value="9">Grade 9</option>
-                                <option value="10">Grade 10</option>
-                                <option value="11">Grade 11 (Science/Commerce)</option>
-                                <option value="12">Grade 12 (Science/Commerce)</option>
-                            </select>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parentName"><i class="fas fa-user-friends"></i> Parent/Guardian Name *</label>
+                                <input type="text" id="parentName" name="parentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Contact Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="branch">Preferred Branch *</label>
-                            <select id="branch" name="branch" required>
-                                <option value="">Select Branch</option>
-                                <option value="panchmadhav">Panchmadhav</option>
-                                <option value="kariyatpur">Kariyatpur</option>
-                                <option value="barkagaon">Barkagaon</option>
-                                <option value="gauriyakarma">Gauriyakarma</option>
-                                <option value="gadikala">Gadikala</option>
-                                <option value="barkatha">Barkatha</option>
-                                <option value="ichak">Ichak</option>
-                                <option value="hazaribagh">Hazaribagh</option>
-                                <option value="pandebara">Pandebara</option>
-                                <option value="mayurhand">Mayurhand</option>
-                            </select>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="previousSchool"><i class="fas fa-school"></i> Previous School (if any)</label>
+                                <input type="text" id="previousSchool" name="previousSchool">
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="form-row">
+                        
                         <div class="form-group">
-                            <label for="parentName">Parent/Guardian Name *</label>
-                            <input type="text" id="parentName" name="parentName" required>
+                            <label for="message"><i class="fas fa-comment-alt"></i> Additional Information</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or questions..."></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Contact Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
+                        
+                        <div class="form-footer">
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Submit Admission Inquiry
+                            </button>
+                            <p class="form-note"><i class="fas fa-info-circle"></i> Our team will contact you within 24 hours</p>
                         </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="previousSchool">Previous School (if any)</label>
-                            <input type="text" id="previousSchool" name="previousSchool">
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Additional Information</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or questions..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">Submit Admission Inquiry</button>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
 
-        <!-- News & Updates Section -->
-        <section id="news" class="news-section">
-            <h2 class="section-title">News & Updates</h2>
-            <div class="news-grid">
-                <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1422&q=80" alt="Annual Sports Day" class="news-img">
-                    <div class="news-content">
-                        <div class="news-date">May 15, 2024</div>
-                        <h3 class="news-title">Annual Sports Day 2024</h3>
-                        <p>Our annual sports day was held with great enthusiasm across all branches. Students participated in various track and field events, showcasing their athletic talents.</p>
-                    </div>
+       
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section-padding">
+            <h2 class="section-title">School Gallery</h2>
+            <p class="section-subtitle">Glimpses of Life at ILEX</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="campus">Campus</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                    <button class="filter-btn" data-filter="classroom">Classroom</button>
                 </div>
                 
-                <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Science Exhibition" class="news-img">
-                    <div class="news-content">
-                        <div class="news-date">April 22, 2024</div>
-                        <h3 class="news-title">Inter-School Science Exhibition</h3>
-                        <p>ILEX Public School students won 3 prizes at the regional inter-school science exhibition. Our students showcased innovative projects on renewable energy.</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="classroom">
+                        <img src="img/project.jpeg" alt="School Building">
+                        <div class="gallery-overlay">
+                            <h4>Smart Classroom</h4>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="CBSE Results" class="news-img">
-                    <div class="news-content">
-                        <div class="news-date">April 10, 2024</div>
-                        <h3 class="news-title">Outstanding CBSE Results 2024</h3>
-                        <p>Our school has achieved 100% pass rate in CBSE Class 10 and 12 examinations. 15 students scored above 95% in Class 12 Science stream.</p>
+                    <div class="gallery-item" data-category="campus">
+                        <img src="img/groutPhot1.jpeg" alt="School Building">
+                        <div class="gallery-overlay">
+                            <h4>Student Phota </h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <img src="img/rogaol.jpeg" alt="Annual Day">
+                        <div class="gallery-overlay">
+                            <h4>Events</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="sports">
+                        <img src="img/sports.jpeg">
+                            <h4>Sports Activities</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="campus">
+                        <img src="img/groupStud.jpeg" alt="Classroom">
+                        <div class="gallery-overlay">
+                            <h4>Student Phota</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -300,42 +914,56 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>ILEX Public School</h3>
+                    <div class="footer-logo">
+                        <h3><i class="fas fa-graduation-cap"></i> ILEX PUBLIC SCHOOL</h3>
+                    </div>
                     <p>Providing quality CBSE education from primary to senior secondary level across multiple branches. Committed to holistic development and academic excellence.</p>
-                    <br>
-                    <p>Affiliated to CBSE New Delhi</p>
-                    <p>Affiliation No. 3430388</p>
-                    <p>School Code: 66592</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Contact Information</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i> Contact Information</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Main Branch: Panchmadhav, Hazaribagh District, Jharkhand</li>
-                        <li><i class="fas fa-phone"></i> +91 1234 567890</li>
+                        <li><i class="fas fa-school"></i> Main Branch: Panchmadhav, Hazaribagh District, Jharkhand - 825311</li>
+                        <li><i class="fas fa-phone"></i> +91 9334071459</li>
                         <li><i class="fas fa-envelope"></i> info@ilexpublicschool.edu.in</li>
                         <li><i class="fas fa-clock"></i> Office Hours: 8:00 AM - 4:00 PM (Mon-Sat)</li>
                     </ul>
+                    <div class="map-link">
+                        <a href="#"><i class="fas fa-map"></i> View on Google Maps</a>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
                     <ul class="quick-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About School</a></li>
-                        <li><a href="#leadership">Leadership</a></li>
-                        <li><a href="#branches">Our Branches</a></li>
-                        <li><a href="#admissions">Admissions</a></li>
-                        <li><a href="#news">News & Updates</a></li>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About School</a></li>
+                        <li><a href="#leadership"><i class="fas fa-chevron-right"></i> Leadership</a></li>
+                        <li><a href="#branches"><i class="fas fa-chevron-right"></i> Our Branches</a></li>
+                        <li><a href="#admissions"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+                        <li><a href="#news"><i class="fas fa-chevron-right"></i> News & Updates</a></li>
                     </ul>
                 </div>
             </div>
             
-            <div class="copyright">
-                <p>&copy; 2026 ILEX Public School. All Rights Reserved. | Designed for Educational Purpose</p>
+            <div class="footer-bottom">
+                <div class="creator-credits">
+                    <h4>Created by <span>प्रभात मेहता और आयुष कुमार</span></h4>
+                    <p>Website Design & Development Team</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2026 ILEX Public School. All Rights Reserved. | Affiliated to CBSE New Delhi (Affiliation No. 3430388)</p>
+                </div>
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
